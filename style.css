@@ -8,39 +8,18 @@
 }
 
 .btn {
-    
-}
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-}
-
-
-/* CSS */
-.btn {
-  background-color: #c2fbd7;
+  background-color: aquamarine;
   border-radius: 100px;
   box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
+  color: rgb(26, 26, 26);
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   transition: all 250ms;
   border: 0;
+  font-weight: 600;
   font-size: 16px;
   user-select: none;
   -webkit-user-select: none;
@@ -49,10 +28,22 @@
 
 .btn:hover {
   box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-  transform: scale(1.05) rotate(-1deg);
+  transform: scale(1.1);
 }
 
+.btn:active{
+    transform: scale(0.95);
+    transition: all 150ms;
+}
+
+main {
+    background-color: aliceblue;
+}
+
+/* HEADER --------------------------------------------------------------------*/
+
 #header {
+    z-index: 1;
     position: fixed;
     width: 100%;
     top:0;
@@ -81,14 +72,18 @@
     background-color: gray;
 }
 
+/* HOME SECTION ------------------------------------------------------------- */
+
 .section-home {
-    background-color: brown;
+    background: #03001e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(120deg, #4b20ad, #290099, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(100deg, #3f179b, #290099, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
     width: 100%;
     height: 100vh;
     display: flex;
     
 }
-
 
 .content {
     width: 100%;
@@ -126,11 +121,23 @@
 
 .home-img {
     grid-column: 2;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
+    -webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 0.5));  
+    
 }
 
+.home-img img {
+    border-radius: 50%;
+}
+
+.home-img img:hover {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+/* ABOUT SECTION ------------------------------------------------------------- */
 
 .section-about {
     background-color: blueviolet;
@@ -138,8 +145,31 @@
     height: 100vh;   
 }
 
+/* CONTACT SECTION ----------------------------------------------------------- */
+
 .section-contact {
     background-color: rgb(35, 36, 141);
     width: 100%;
     height: 100vh;
 }
+
+/* MEDIA AND KEYFRAMES ------------------------------------------------------- */
+
+@keyframes float {
+	0% {
+		-webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 0.5));
+		transform: translatey(0px);
+	}
+	50% {
+		-webkit-filter: drop-shadow(25px 15px 5px rgba(0,0,0,0.2));
+        filter: drop-shadow(25px 15px 5px rgba(0,0,0,0.2));
+		transform: translatey(-20px);
+	}
+	100% {
+		-webkit-filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(5px 15px 5px rgba(0, 0, 0, 0.5));
+		transform: translatey(0px);
+	}
+}
+
