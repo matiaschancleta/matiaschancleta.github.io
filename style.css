@@ -128,7 +128,7 @@ main {
 }
 
 .info p {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 80px;
 }
 
@@ -212,7 +212,7 @@ main {
   }
 
   .info p {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 40px;
   }
 
@@ -241,6 +241,14 @@ main {
 
 @media screen and (max-width: 500px) {
   .home-img {
-    padding-top: 70px;
+    padding-top: 30px;
+  }
+
+  .info h1 {
+    font-size: 34px;
+  }
+
+  .info h3 {
+    font-size: 22px;
   }
 }
