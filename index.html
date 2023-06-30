@@ -15,14 +15,19 @@
     <header id="header">
         
         <div class="page-logo">
-            <a href="#home"><h1>RueDev</h1></a>
+            <a href=""><h1>RueDev</h1></a>
         </div>
 
-        <div class="navbar">
-            <a href="#home">Home</a>
+        <div class="menu-icon">
+            <img class="open-icon" src="res/open-icon.svg" alt="">
+            <img class="close-icon" src="res/close-icon.svg" alt="">
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
-        </div>
+        </nav>
     </header>
 
     <!-- Main sections and content -------------------------------------------------------------------->
@@ -33,9 +38,9 @@
             <div class="content">
                 <div class="info">
                     <div id="text">
-                        <h1>Presentation & Portfolio</h1>
-                        <h3>Hello, I am <span class="span-hl">Matias Rueda</span></h3>
-                        <p>I am a <span class="span-hl">Programming Technician<br></span> specialized in <span class="span-hl">Front-end development</span></p>
+                        <h1>Presentation & <span class="span-hl">Portfolio</span></h1>
+                        <h3>Hello, I am <span class="span-hl typed-txt">Matias Rueda</span></h3>
+                        <p>I am a <span class="span-hl typed-txt2"><br></span> specialized in <span class="span-hl typed-txt3"></span></p>
                     </div>
                     <div id="button">
                         <button class="btn btn-more">Read more</button>
@@ -49,30 +54,52 @@
         </section>
 
         <section class="section-about" id="about">
-
-            <div class="content about-content">
-                <div class="about-info-left">
-                    <ul>
-                        <li>hola</li>
-                        <li>hola</li>
-                        <li>holas</li>
-                    </ul>
-                </div>
-                <div class="vertical-line"></div>
-                <div class="about-info-right">
-                    <ul>
-                        <li>olé</li>
-                        <li>leo</li>
-                    </ul>
+            <div class="abt-title">
+                <h1>About <span class="span-hl">Me</span></h1>
+            </div>
+            <div class="about-content">
+                
+                <div class="content">
+                    
+                    <div class="about-info-left abt-info">
+    
+                        <h1>Who am I?</h1>
+                        <p>I am Matias Rueda. I am starting in the world of front-end development studying by myself. <br><br>
+                            I have studied Programming Technician in the secondary school <span class="span-hl">E.P.E.T. N°12 Ing. Juan Carlos Fontanive</span>, and did some courses in 
+                            <a href="">Codecademy</a> and <a href="">freeCodeCamp</a>
+                        </p>
+    
+                        <h1>Objectives</h1>
+                        <p>I want to develop myself as a good programmer, working in real projects with real enterprises and keep learning
+                        </p>
+    
+                        <h1>Interests</h1>
+                        <p></p>
+                    </div>
+                    
+                    <div class="about-info-right abt-info">
+                        <h1>What I do</h1>
+                        <h1>What I want to learn next</h1>
+                        
+                    </div>
                 </div>
             </div>
+           
 
         </section>
 
         <section class="section-contact" id="contact"></section>
 
     </main>
-    <script src="animations.js"></script>
+    
+    <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/typed.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    
+
     <footer></footer>
 </body>
 </html>

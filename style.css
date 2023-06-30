@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
 * {
   text-decoration: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: verdana;
+  font-family: "Poppins", verdana, sans-serif;
   scroll-behavior: smooth;
   list-style: none;
+  
+}
+
+:root {
+  --text-color1: #fff;
 }
 
 .btn {
@@ -28,10 +35,6 @@
 }
 
 .btn:hover {
-  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
-    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
-    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
-    rgba(44, 187, 99, 0.25) 0 16px 32px;
   transform: scale(1.1);
 }
 
@@ -50,7 +53,7 @@ main {
 /* HEADER --------------------------------------------------------------------*/
 
 #header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -66,7 +69,8 @@ main {
 }
 
 .page-logo a h1{
-  color: rgb(255, 255, 255);
+  color: var(--text-color1);
+  font-weight: 600;
 }
 
 .navbar a {
@@ -74,7 +78,7 @@ main {
   justify-content: flex-end;
   padding: 15px 40px 15px 40px;
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: var(--text-color1);
   height: 100%;
   transition: 0.15s ease-in-out;
   display: inline-block;
@@ -83,6 +87,18 @@ main {
 .navbar a:hover {
   /* font-size: 22px; */
   transform: scale(1.1);
+}
+
+.navbar a.active {
+  color: aquamarine;
+}
+
+.open-icon {
+  display: none;
+}
+
+.close-icon {
+  display: none;
 }
 
 /* HOME SECTION ------------------------------------------------------------- */
@@ -119,7 +135,7 @@ main {
 .info {
   padding: 0 40px;
   grid-column: 1;
-  color: white;
+  color: var(--text-color1);
 }
 
 .info h1 {
@@ -185,41 +201,66 @@ main {
 .section-about {
   display: flex;
   background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #434343, #030020);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #434343, #030020); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #242424, #030020);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #242424, #030020); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 100vh;
 }
 
 .about-content {
-  background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.9));
-  margin: 90px;
-  border-radius: 10px;
+  color: var(--text-color1);
+  width: 90%;
+  
+  border-radius: 5px;
+  margin: auto;
+}
+
+.about-content .content {
+  justify-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.abt-title {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1;
+  margin-top: 60px;
+  color: var(--text-color1);
+}
+
+.abt-title h1 {
+  font-size: 40px;
 }
 
 .about-info-left {
   grid-column: 1;
+  padding-left: 100px;
 }
 
 .about-info-right {
   grid-column: 2;
+  padding-left: 100px;
 }
 
-.vertical-line {
-  position: absolute;
-  height: 70%;
-  width: 1px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
+.abt-info p {
+  padding: 20px 0 40px 20px;
 }
 
+.abt-info a {
+  color: rgb(55, 219, 164);
+  text-decoration:underline;
+}
 
 /* CONTACT SECTION ----------------------------------------------------------- */
 
 .section-contact {
   background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(180deg, #434343, #110041, #160052, #1e0072);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(180deg, #434343,#261752, #241450, #1e0072); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(180deg, #242424, #110041, #160052, #1e0072);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(180deg, #242424,#261752, #241450, #1e0072); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 100vh;
 }
@@ -245,6 +286,35 @@ main {
 }   
 
 @media screen and (max-width: 800px) {
+
+  .open-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .close-icon {
+    display: none;
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: translate(110%);
+    transition: all 0.2s;
+  }
+
+  .navbar a {
+    display: block;
+  }
+
+  .show {
+    transform: translate(0);
+  }
+
   header {
     width: 50%;
   }
