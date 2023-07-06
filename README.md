@@ -2,7 +2,7 @@
 Personal Portfolio
 
 Link to the page:
-matiaschancleta.github.io
+https://matiaschancleta.github.io
 
 In this project I did my personal portfolio for my presentation.
 
