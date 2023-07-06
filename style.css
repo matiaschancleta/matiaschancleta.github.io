@@ -50,10 +50,11 @@ main {
   width: 100%;
 }
 
+
 /* HEADER --------------------------------------------------------------------*/
 
 #header {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 1;
   position: fixed;
   width: 100%;
@@ -174,11 +175,6 @@ main {
   width: 600px;
 }
 
-.home-img img:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.05);
-}
-
 #arrow {
   display: block;
   position: absolute;
@@ -201,6 +197,7 @@ main {
 
 .section-about {
   display: flex;
+  flex-direction: column;
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #242424, #060038);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #242424, #060038); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -211,7 +208,6 @@ main {
 .about-content {
   color: var(--text-color1);
   width: 90%;
-  
   border-radius: 5px;
   margin: auto;
 }
@@ -237,14 +233,16 @@ main {
   font-size: 40px;
 }
 
+.abt-info {
+  padding-left: 100px;
+}
+
 .about-info-left {
   grid-column: 1;
-  padding-left: 100px;
 }
 
 .about-info-right {
   grid-column: 2;
-  padding-left: 100px;
 }
 
 .abt-info p {
@@ -256,6 +254,11 @@ main {
   text-decoration:underline;
 }
 
+.btn-contact {
+  text-align: center;
+  
+}
+
 /* CONTACT SECTION ----------------------------------------------------------- */
 
 .section-contact {
@@ -264,6 +267,36 @@ main {
   background: linear-gradient(180deg, #242424,#261752, #241450, #1e0072); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 100vh;
+}
+
+/* ICONS --------------------------------------------------------------------- */
+
+i.bx, i.fab {
+  margin-right: 20px;
+}
+
+.bx, .fab{
+  font-size: 40px;
+}
+
+.bxl-html5 {
+  color: #FF5733;
+}
+
+.bxl-css3 {
+  color: #2965f1;
+}
+
+.bxl-javascript {
+  color: #F0DB4F;
+}
+
+.fa-react {
+  color: #61DBFB;
+}
+
+.fa-laravel {
+  color: #F05340;
 }
 
 /* MEDIA AND KEYFRAMES ------------------------------------------------------- */
@@ -285,6 +318,8 @@ main {
     transform: translatey(0px);
   }
 }   
+
+/* MEDIA 800PX ------------------------------------------------------- */
 
 @media screen and (max-width: 800px) {
 
@@ -355,24 +390,26 @@ main {
     width: 250px;
   }
 
-  .home-img img:hover {
-    transition: none;
-    transform: none;
-  }
-
   .vertical-line {
     display: none;
   }
 
-  #arrow{
+  #arrow {
     width: 50px;
     height: 50px;
   }
+
+  .abt-info {
+    padding-left: 0px
+  }
+
 }
+
+/* MEDIA 500PX ------------------------------------------------------- */
 
 @media screen and (max-width: 500px) {
   .home-img {
-    padding-top: 30px;
+    padding-top: 50px;
   }
 
   .info h1 {
@@ -382,7 +419,21 @@ main {
   .info h3 {
     font-size: 22px;
   }
+
+  .home-img img {
+    width: 220px;
+  }
+
+  .abt-title h1 {
+    font-size: 30px;
+  }
+
+  .abt-info p{
+    font-size: 13px;
+  }
 }
+
+/* MEDIA 330PX ------------------------------------------------------- */
 
 @media screen and (max-width: 330px) {
 
@@ -397,10 +448,6 @@ main {
   .info p {
     font-size: 13px;
     margin-bottom: 20px;
-  }
-
-  .home-img img {
-    width: 220px;
   }
 
   #button {

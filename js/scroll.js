@@ -54,5 +54,5 @@ ScrollReveal({
     
 });
 
-ScrollReveal().reveal('.info, .home-img img', { origin: 'left' });
-ScrollReveal().reveal('#arrow img', { origin: 'top' });
+ScrollReveal().reveal('.info, .home-img img, .abt-info, .btn-contact', { origin: 'left' });
+ScrollReveal().reveal('#arrow img, .abt-title', { origin: 'top' });
