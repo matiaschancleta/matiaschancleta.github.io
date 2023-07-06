@@ -224,7 +224,6 @@ main {
   left: 0;
   right: 0;
   margin: 0 auto;
-  z-index: 1;
   margin-top: 60px;
   color: var(--text-color1);
 }
@@ -429,7 +428,7 @@ i.bx, i.fab {
   }
 
   .abt-info p{
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
