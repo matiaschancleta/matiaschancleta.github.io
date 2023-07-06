@@ -171,6 +171,7 @@ main {
 
 .home-img img {
   border-radius: 50%;
+  width: 600px;
 }
 
 .home-img img:hover {
@@ -201,8 +202,8 @@ main {
 .section-about {
   display: flex;
   background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #242424, #030020);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #242424, #030020); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #242424, #060038);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #242424, #060038); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 100vh;
 }
@@ -347,11 +348,11 @@ main {
   }
 
   .home-img {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 
   .home-img img {
-    width: 300px;
+    width: 250px;
   }
 
   .home-img img:hover {
@@ -380,5 +381,34 @@ main {
 
   .info h3 {
     font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+
+  .info h1 {
+    font-size: 30px;
+  }
+
+  .info h3 {
+    font-size: 22px;
+  }
+
+  .info p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .home-img img {
+    width: 220px;
+  }
+
+  #button {
+    text-align: center;
+  }
+
+  .btn {
+    padding: 5px 16px;
+    font-size: 13px;
   }
 }

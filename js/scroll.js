@@ -47,14 +47,12 @@ window.onscroll = function () {
 };
 
 
-
-ScrollReveal({
+ScrollReveal({ 
     reset: true,
     distance: '80px',
-    duration: 1000,
-    delay: 200
+    duration: 1000
+    
 });
 
-ScrollReveal().reveal('.abt-title', {origin: 'top'});
-ScrollReveal().reveal('.info', {origin: 'left'});
-ScrollReveal().reveal('.home-img, ', {origin: 'bottom'});
+ScrollReveal().reveal('.info, .home-img img', { origin: 'left' });
+ScrollReveal().reveal('#arrow img', { origin: 'top' });
