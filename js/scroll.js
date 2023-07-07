@@ -50,9 +50,9 @@ window.onscroll = function () {
 ScrollReveal({ 
     reset: true,
     distance: '80px',
-    duration: 1000
-    
+    duration: 1000 
 });
 
-ScrollReveal().reveal('.info, .home-img img, .abt-info, .btn-contact', { origin: 'left' });
-ScrollReveal().reveal('#arrow img, .abt-title', { origin: 'top' });
+ScrollReveal().reveal('.info, .home-img img, .abt-info, .btn-contact, .phrase', { origin: 'left' });
+ScrollReveal().reveal('#arrow img, .abt-title, .txt-contact h1, .txt-contact h3', { origin: 'top', distance: '50px' });
+ScrollReveal().reveal('.social-icons li', { origin: 'left', delay: 100 });

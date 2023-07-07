@@ -67,6 +67,8 @@
                 
                 <div class="content">
                     
+                    <!-- LEFT CONTENT -------------------------------->
+
                     <div class="about-info-left abt-info">
     
                         <h3>Who am I</h3>
@@ -75,19 +77,6 @@
                             <a href="https://www.codecademy.com/profiles/TheChancleta" target="_blank"><span class="span-hl">Codecademy</span></a> and <a href="https://www.freecodecamp.org/RuedaMatias" target="_blank"><span class="span-hl">freeCodeCamp</span></a>
                         </p>
     
-                        <h3>My Objectives</h3>
-                        <p>I want to develop myself as a good programmer, working in <span class="span-hl">real projects</span>, and keep <span class="span-hl">learning</span>
-                        </p>
-
-                        <h3>Projects</h3>
-                        <ul>
-                            <li><p>For the moment this page is my only real project:</p></li>
-                            <li><p><a  targe="_blank" href="https://github.com/matiaschancleta/matiaschancleta.github.io"><span class="span-hl">My Personal Page (Github code)</span></a></p></li>
-
-                        </ul>
-                    </div>
-                    
-                    <div class="about-info-right abt-info">
                         <h3>What I do</h3>
                         <p>I build the front-end of the websites using <span class="span-hl">HTML</span>, <span class="span-hl">CSS</span> and <span class="span-hl">Javascript</span> 
                             <br>
@@ -102,14 +91,30 @@
                             <br>
                             <a target="_blank" href="https://es.react.dev/"><i class="fab fa-brands fa-react"></i></a>
                             <a target="_blank" href="https://laravel.com/"><i class="fab fa-laravel"></i></a>
-                    </p>
+                        </p>
+                    </div>
+                    
+                    <!-- RIGHT CONTENT -------------------------------->
 
+                    <div class="about-info-right abt-info">
+                        <h3>My Objectives</h3>
+                        <p>I want to develop myself as a good programmer, working in <span class="span-hl">real projects</span>, and keep <span class="span-hl">learning</span>
+                        </p>
                         
                         <h3>What I want to learn next</h3>
-                        <p>I want to <span class="span-hl">improve my Javascript</span> and then learn <span class="span-hl">React</span>. I also want to learn <span class="span-hl">Tailwind</span></p>
+                        <p>I want to <span class="span-hl">improve my Javascript</span> and then learn <span class="span-hl">React</span>.
+                             I also want to learn <span class="span-hl">Tailwind</span></p>
                         
+                        <h3>Projects</h3>
+                        <ul>
+                            <li><p id="p">For the moment this page is my only real project:</p></li>
+                            <li><p id="p"><a  targe="_blank" href="https://github.com/matiaschancleta/matiaschancleta.github.io"><span class="span-hl">My Personal Page (Github code)</span></a></p></li>
+
+                        </ul>
                     </div>
                 </div>
+
+                <!-- BUTTON ------------------------------------------->
 
                 <div class="btn-contact">
                     <a href="#contact"><button class="btn">Contact me</button></a>
@@ -120,16 +125,46 @@
 
         <!-- CONTACT SECTION ----------------------------------------------------------------------------->
 
-        <section class="section-contact" id="contact"></section>
+        <section class="section-contact" id="contact">
+            <div class="container">
+                <div class="txt-contact">
+                    <h1>Contact <span class="span-hl">me</span></h1>
+                    <h3>Let's communicate if you wanna know more about me</h3>
+                </div>
+                <div class="contact-icons">
+                    <ul class="social-icons icon-circle icon-rotate">
+                        <li> <p class="show-text"></p> <a target="_blank" href="https://github.com/matiaschancleta"><i id="contact-icon" class="fa fa-github"></i></a> <p class="show-text">matiaschancleta</p></li>
+                        <li> <p class="show-text"></p> <a target="_blank" href="https://www.linkedin.com/in/matias-rueda-aa596a26b/"><i id="contact-icon" class="fa fa-linkedin"></i></a> <p class="show-text">Matias Rueda</p></li> 
+                        <li> <p class="show-text"></p> <a target="_blank" href="mailto: ruedamatiasg@gmail.com"><i id="contact-icon" class="fa fa-google"></i></a> <p class="show-text">ruedamatiasg@gmail.com</p></li> 
+                        <li> <p class="show-text"></p> <a target="_blank" href="https://wa.me/542972433909"><i id="contact-icon" class="fa fa-whatsapp"></i></a> <p class="show-text">+54 2972 433 909</p></li>
+                        <li> <p class="show-text"></p> <a target="_blank" href="https://t.me/ruedamatias"><i id="contact-icon" class='fa bx bxl-telegram'></i></a></i> <p class="show-text">@ruedamatias</p></li>
+                    </ul>
+                </div>
+                <div class="phrase">
+                    <p>"Programming is not about solving problems, but about creating solutions"</p>
+                </div>
+            </div>  
+
+            
+
+        </section>
 
     </main>
+
+    <footer>
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Matias Rueda | All Rights Reserved</p>
+        </div>
+
+        <div class="footer-icon-top"><a href="#home"><i class='bx bxs-up-arrow'></i></a></div>
+    </footer>
     
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="js/menu.js"></script> 
     <script src="js/typed.js"></script>
     <script src="js/scroll.js"></script>
-    
-    <footer></footer>
+    <script src="js/contact.js"></script>
+
 </body>
 </html>
