@@ -274,10 +274,10 @@ main {
 
 .container {
   position: relative;
-  flex-direction: column;
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--text-color1)
@@ -297,18 +297,14 @@ main {
 }
 
 .contact-icons li {
-  float: left;
-  margin: 20px 20px;
-}
-
-.show-text {
-  display: none;
+  display: inline-block;
+  margin: 20px;
 }
 
 .phrase {
   position: absolute;
   bottom: 60px;
-  
+  padding: 0 20px;
 }
 
 /* FOOTER --------------------------------------------------------------------- */
@@ -318,7 +314,6 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 20px 10%;
   background-color: rgba(0, 0, 0, 0.9);
 }
@@ -342,7 +337,7 @@ footer {
 
 /* ICONS --------------------------------------------------------------------- */
 
-i.bx, i.fab {
+#abt-i.bx, #abt-i.fab {
   margin-right: 20px;
 }
 
@@ -371,10 +366,7 @@ i.bx, i.fab {
 }
 
 .social-icons .fa {
-	font-size: 1.8em;
-}
-
-.social-icons .fa {
+  font-size: 1.8em;
 	width: 50px;
 	height: 50px;
 	line-height: 50px;
@@ -394,17 +386,17 @@ i.bx, i.fab {
 
 .social-icons .fa:hover, .social-icons .fa:active {
 	color: #FFF;
-	-webkit-box-shadow: 1px 1px 3px #333;
-	-moz-box-shadow: 1px 1px 3px #333;
-	box-shadow: 1px 1px 3px #333; 
+	box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.52);
+  -webkit-box-shadow: 0px 0px 20px 10px rgba(255,255,255,0.52);
+  -moz-box-shadow: 0px 0px 1px 10px rgba(255,255,255,0.52);
 }
 
 .social-icons.icon-rotate .fa:hover, .social-icons.icon-rotate .fa:active { 
-	-webkit-transform: scale(1.1) rotate(-360deg);
-	-moz-transform: scale(1.1) rotate(-360deg);
-	-ms-transform: scale(1.1) rotate(-360deg);
-	-o-transform: scale(1.1) rotate(-360deg);
-	transform: scale(1.1) rotate(-360deg);
+	-webkit-transform: scale(1.2) rotate(-360deg);
+	-moz-transform: scale(1.2) rotate(-360deg);
+	-ms-transform: scale(1.2) rotate(-360deg);
+	-o-transform: scale(1.2) rotate(-360deg);
+	transform: scale(1.2) rotate(-360deg);
 }
 
 .social-icons .fa-github {
@@ -444,6 +436,10 @@ i.bx, i.fab {
 }   
 
 /* MEDIA 800PX ------------------------------------------------------- */
+
+/* (I have realised that it is better to work with
+ a base value of the font-sizes, like a var or a base size to use with
+ rem) */
 
 @media screen and (max-width: 800px) {
 
@@ -485,6 +481,7 @@ i.bx, i.fab {
     align-items: center;
     justify-content: center;
   }
+  
   .info h1 {
     font-size: 40px;
   }
@@ -556,6 +553,27 @@ i.bx, i.fab {
   .abt-info p{
     font-size: 16px;
   }
+
+  .contact-icons ul {
+    max-width: 350px; 
+  }
+
+  .txt-contact h1 {
+    font-size: 30px;
+  }
+
+  .txt-contact h3 {
+    font-size: 22px;
+  }
+
+  .phrase{
+    font-size: 14px;
+  }
+
+  .footer-text p {
+    font-size: 10px;
+  }
+
 }
 
 /* MEDIA 330PX ------------------------------------------------------- */

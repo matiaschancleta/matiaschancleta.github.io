@@ -50,9 +50,18 @@ window.onscroll = function () {
 ScrollReveal({ 
     reset: true,
     distance: '80px',
-    duration: 1000 
+    duration: 1000,
+    delay:100 
 });
 
 ScrollReveal().reveal('.info, .home-img img, .abt-info, .btn-contact, .phrase', { origin: 'left' });
 ScrollReveal().reveal('#arrow img, .abt-title, .txt-contact h1, .txt-contact h3', { origin: 'top', distance: '50px' });
-ScrollReveal().reveal('.social-icons li', { origin: 'left', delay: 100 });
+
+
+//contact icons
+
+ScrollReveal().reveal('#icon1', { origin: 'left', delay: 300, distance: '120px' });
+ScrollReveal().reveal('#icon2', { origin: 'left', delay: 250, distance: '120px' });
+ScrollReveal().reveal('#icon3', { origin: 'left', delay: 200, distance: '120px' });
+ScrollReveal().reveal('#icon4', { origin: 'left', delay: 150, distance: '120px' });
+ScrollReveal().reveal('#icon5', { origin: 'left', delay: 100, distance: '120px' });
