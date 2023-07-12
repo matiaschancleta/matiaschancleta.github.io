@@ -54,7 +54,7 @@ ScrollReveal({
     delay:100 
 });
 
-ScrollReveal().reveal('.info, .home-img img, .abt-info, .btn-contact, .phrase', { origin: 'left' });
+ScrollReveal().reveal('.info, .home-img img, .info-sec, .btn-contact, .phrase', { origin: 'left' });
 ScrollReveal().reveal('#arrow img, .abt-title, .txt-contact h1, .txt-contact h3', { origin: 'top', distance: '50px' });
 
 
