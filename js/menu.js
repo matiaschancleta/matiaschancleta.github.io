@@ -7,13 +7,13 @@ const navbar = document.querySelector('.navbar');
 
 menu.addEventListener('click', () => {
     navbar.classList.toggle('show');
-    
-    if (navbar.classList.contains('show')){
-        openIcon.style.display = "none";
-        closeIcon.style.display = "block";
-    }
-    else {
-        openIcon.style.display = "block";
-        closeIcon.style.display = "none";
-    }
 });
+
+window.addEventListener('mousedown', e => {
+    if (navbar.classList.contains('show')
+        && e.target != navbar && e.target != openIcon && e.target != closeIcon) {
+        navbar.classList.toggle("show");
+    }
+
+    return console.log(e)
+})

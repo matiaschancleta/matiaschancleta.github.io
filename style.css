@@ -96,10 +96,6 @@ main {
   display: none;
 }
 
-.close-icon {
-  display: none;
-}
-
 /* HOME SECTION ------------------------------------------------------------- */
 
 .section-home {
@@ -486,11 +482,6 @@ footer {
 @media screen and (max-width: 800px) {
   .open-icon {
     display: block;
-    cursor: pointer;
-  }
-
-  .close-icon {
-    display: none;
     cursor: pointer;
   }
 
