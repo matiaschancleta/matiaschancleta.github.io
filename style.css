@@ -173,7 +173,7 @@ main {
 }
 
 .home-img:hover .img-footer {
-  display:block
+  display: block
 }
 
 .home-img img {
@@ -555,6 +555,10 @@ footer {
 
   .abt-info {
     padding-left: 0px;
+  }
+
+  .img-footer:hover {
+    display: none;
   }
 }
 
